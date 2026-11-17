@@ -121,6 +121,7 @@ code { font-family: inherit; font-size: .92em; background: var(--alt); padding: 
 .answer strong { font-weight: 700; color: var(--strong); }
 .answer h4 { font-size: var(--fs-b); font-weight: 700; color: var(--navy); margin: 14px 0 4px; }
 .answer h4:first-child { margin-top: 2px; }
+.answer hr { border: 0; border-top: 1px solid var(--line); margin: 14px 0; }
 .answer table { border-collapse: collapse; font-size: var(--fs-s); margin: 4px 0 12px; border-top: 2px solid var(--rule); }
 .answer th, .answer td { border-bottom: 1px solid var(--line); padding: 6px 10px 6px 0; text-align: left; }
 .answer th { font-weight: 400; color: var(--muted); }

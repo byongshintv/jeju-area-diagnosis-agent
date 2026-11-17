@@ -78,6 +78,7 @@
       flushTable();
       let m;
       if (!line.trim()) { flushPara(); flushList(); continue; }
+      if (/^\s*([-*_])(\s*\1){2,}\s*$/.test(line)) { flushPara(); flushList(); out.push("<hr>"); continue; }
       if ((m = line.match(/^#{1,6}\s+(.*)/))) { flushPara(); flushList(); out.push("<h4>" + inline(m[1]) + "</h4>"); continue; }
       if ((m = line.match(/^\s*[-*•]\s+(.*)/))) { flushPara(); if (!list || list.tag !== "ul") { flushList(); list = { tag: "ul", items: [] }; } list.items.push(m[1]); continue; }
       if ((m = line.match(/^\s*\d+[.)]\s+(.*)/))) { flushPara(); if (!list || list.tag !== "ol") { flushList(); list = { tag: "ol", items: [] }; } list.items.push(m[1]); continue; }
