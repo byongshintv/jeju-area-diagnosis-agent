@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>제주 동네 상권 진단</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>제주 동네 상권 진단</a>
+  <nav class="gnb" aria-label="주 메뉴">
+    <a href="/" aria-current="page">상권 진단</a>
+  </nav>
+  <div class="bar-status" id="status" aria-live="polite"></div>
+  <button type="button" class="btn" id="openData" aria-haspopup="dialog">센터 데이터 올리기</button>
+</header>
+<div class="band">
+  <h1>동네 상권 진단</h1>
+  <p>동네와 업종을 물으면 제주 43개 읍면동 안에서의 위치를 데이터로 보여 줍니다.</p>
+  <span class="crumb">홈 › 상권 진단</span>
+</div>
+
+<main class="layout">
+  <section class="talk" aria-label="질문과 Agent 진행">
+    <div class="thread" id="thread"></div>
+    <form class="ask" id="ask">
+      <label class="sr-only" for="q">질문</label>
+      <textarea id="q" rows="2" placeholder="예: 노형동에서 카페 창업하면 어때?" autocomplete="off"></textarea>
+      <button type="submit" class="btn btn-primary" id="send">묻기</button>
+    </form>
+  </section>
+
+  <section class="board" id="board" aria-label="분석 결과" tabindex="-1"></section>
+</main>
+
+<dialog class="sheet" id="dataSheet" aria-labelledby="dataTitle">
+  <form method="dialog" class="sheet-head">
+    <h2 id="dataTitle">센터 데이터</h2>
+    <button class="btn" value="close">닫기</button>
+  </form>
+  <div class="sheet-body">
+    <p class="lede">제주빅데이터센터에서 받은 결과 CSV를 올리면 열 이름으로 어떤 데이터인지 알아봅니다. 올린 파일은 이 PC 안에서만 계산하고 AI 모델로 보내지 않습니다.</p>
+    <label class="drop" id="drop">
+      <input type="file" id="file" accept=".csv,text/csv" multiple>
+      <span class="drop-main">CSV 파일 고르기</span>
+      <span class="drop-sub">끌어다 놓아도 됩니다</span>
+    </label>
+    <ul class="uploads" id="uploads"></ul>
+    <div class="sheet-actions">
+      <button type="button" class="btn" id="loadDemo">가상 예시 데이터 불러오기</button>
+      <button type="button" class="btn" id="clearUploads">모두 지우기</button>
+    </div>
+  </div>
+</dialog>
+
+<script src="/assets/jeju-tiles.js"></script>
+<script src="/assets/render.js"></script>
+<script src="/assets/app.js"></script>
+</body>
+</html>

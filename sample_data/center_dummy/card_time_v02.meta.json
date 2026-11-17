@@ -1,0 +1,31 @@
+{
+ "id": "center_dummy:1-14",
+ "dataset_no": "1-14",
+ "name": "1-14 카드 이용 현황(시간대)_v02",
+ "provider": "제주빅데이터센터(가상 시연용)",
+ "source_kind": "center_dummy",
+ "file": "card_time_v02.csv",
+ "rows": 6450,
+ "bytes": 890030,
+ "columns": [
+  "base_year_month",
+  "dstrct_se",
+  "bjd",
+  "biz_cd",
+  "biz_nm",
+  "user_type",
+  "tour_type",
+  "time",
+  "age",
+  "sex",
+  "user_cnt",
+  "use_cnt",
+  "use_amt"
+ ],
+ "period": "2026-01 ~ 2026-03",
+ "license": "형식 시연용 가상 데이터(실데이터 아님, 반출 대상 아님)",
+ "note": "가상 데이터(형식 시연용)",
+ "generator": "tools/make_dummy_center.py",
+ "seed": 20261117,
+ "scale_basis": "허브 상가(상권) 정보 읍면동별 점포 수 비례"
+}

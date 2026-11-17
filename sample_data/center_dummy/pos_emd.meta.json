@@ -1,0 +1,30 @@
+{
+ "id": "center_dummy:1-19",
+ "dataset_no": "1-19",
+ "name": "1-19 외식업 포스 이용 현황(읍면동)",
+ "provider": "제주빅데이터센터(가상 시연용)",
+ "source_kind": "center_dummy",
+ "file": "pos_emd.csv",
+ "rows": 516,
+ "bytes": 61912,
+ "columns": [
+  "base_year_month",
+  "city_cd",
+  "city_nm",
+  "bjd_cd",
+  "bjd_nm",
+  "biz_mid_cd",
+  "biz_mid_nm",
+  "biz_small_cd",
+  "biz_small_nm",
+  "sale_amt",
+  "store_cnt",
+  "use_cnt"
+ ],
+ "period": "2026-01 ~ 2026-03",
+ "license": "형식 시연용 가상 데이터(실데이터 아님, 반출 대상 아님)",
+ "note": "가상 데이터(형식 시연용)",
+ "generator": "tools/make_dummy_center.py",
+ "seed": 20261117,
+ "scale_basis": "허브 상가(상권) 정보 읍면동별 점포 수 비례"
+}

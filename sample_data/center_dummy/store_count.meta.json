@@ -1,0 +1,24 @@
+{
+ "id": "center_dummy:1-17",
+ "dataset_no": "1-17",
+ "name": "1-17 제주도 내 업종별 매장 수",
+ "provider": "제주빅데이터센터(가상 시연용)",
+ "source_kind": "center_dummy",
+ "file": "store_count.csv",
+ "rows": 80,
+ "bytes": 5690,
+ "columns": [
+  "base_year_month",
+  "city",
+  "owner_gb",
+  "biz_cd",
+  "biz_nm",
+  "store_cnt"
+ ],
+ "period": "2026-01 ~ 2026-02",
+ "license": "형식 시연용 가상 데이터(실데이터 아님, 반출 대상 아님)",
+ "note": "가상 데이터(형식 시연용)",
+ "generator": "tools/make_dummy_center.py",
+ "seed": 20261117,
+ "scale_basis": "허브 상가(상권) 정보 읍면동별 점포 수 비례"
+}

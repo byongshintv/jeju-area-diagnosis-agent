@@ -1,0 +1,30 @@
+{
+ "id": "hub:512",
+ "hub_dataset_id": 512,
+ "requested_id": 725,
+ "requested_name": "일일 정류소별 버스 이용자 정보",
+ "name": "일별 시간대별 버스 승차 인원 수 현황",
+ "hub_title": "일별 시간대별 버스 승차 인원 수 현황",
+ "provider": "제주데이터허브",
+ "source_kind": "hub",
+ "period": "2024-11 ~ 2025-10",
+ "period_note": "최근 12개월만 저장(정류소 단위 아님)",
+ "license": "제주데이터허브 공개 데이터(공공데이터법·시행령에 따라 이용, 출처 표시. 제출물 포함은 대회 게시판 #8·#20 답변으로 확인)",
+ "url": "https://jejudatahub.net/api/data/view?id=512",
+ "file": "bus_hourly.csv",
+ "rows": 20767,
+ "bytes": 838617,
+ "columns": [
+  "base_date",
+  "day_of_week",
+  "base_hour",
+  "user_type",
+  "user_count"
+ ],
+ "source": "file:일별시간대별버스승차인원수현황.csv",
+ "api_params": {},
+ "trimmed_rows": 16290,
+ "collected_at": "2026-11-17T01:14:22",
+ "available": true,
+ "note": "제주데이터허브 공개 데이터 스냅샷. 원본 갱신 주기를 따르지 않는 고정 사본."
+}

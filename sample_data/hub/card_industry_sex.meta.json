@@ -1,0 +1,32 @@
+{
+ "id": "hub:1048",
+ "hub_dataset_id": 1048,
+ "requested_id": 311,
+ "requested_name": "업종별 성별 카드 이용 정보",
+ "name": "업종별 성별 카드 이용 정보",
+ "hub_title": "업종별 성별 카드 이용 정보",
+ "provider": "제주데이터허브",
+ "source_kind": "hub",
+ "period": "2024-07 ~ 2025-06",
+ "period_note": "최근 12개월만 저장",
+ "license": "제주데이터허브 공개 데이터(공공데이터법·시행령에 따라 이용, 출처 표시. 제출물 포함은 대회 게시판 #8·#20 답변으로 확인)",
+ "url": "https://jejudatahub.net/api/data/view?id=1048",
+ "file": "card_industry_sex.csv",
+ "rows": 4620,
+ "bytes": 326084,
+ "columns": [
+  "base_year_month",
+  "biz_nm",
+  "user_type",
+  "sex",
+  "user_count",
+  "use_count",
+  "use_amount"
+ ],
+ "source": "file:업종별성별카드이용정보.csv",
+ "api_params": {},
+ "trimmed_rows": 23635,
+ "collected_at": "2026-11-17T01:14:15",
+ "available": true,
+ "note": "제주데이터허브 공개 데이터 스냅샷. 원본 갱신 주기를 따르지 않는 고정 사본."
+}

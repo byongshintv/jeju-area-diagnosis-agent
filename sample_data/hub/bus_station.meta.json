@@ -1,0 +1,49 @@
+{
+ "id": "hub:613",
+ "hub_dataset_id": 613,
+ "requested_id": 725,
+ "requested_name": "일일 정류소별 버스 이용자 정보",
+ "name": "정류소별 버스 승차 인원(월 일평균)",
+ "hub_title": "일일 정류소별 버스 이용자 정보",
+ "provider": "제주데이터허브",
+ "source_kind": "hub",
+ "period": "2026-09 ~ 2026-11",
+ "period_note": "최근 값이 있는 달 기준 3개월, 표본일 승차 인원(일평균)",
+ "license": "제주데이터허브 공개 데이터(공공데이터법·시행령에 따라 이용, 출처 표시. 제출물 포함은 대회 게시판 #8·#20 답변으로 확인)",
+ "url": "https://jejudatahub.net/api/data/view?id=613",
+ "file": "bus_station.csv",
+ "rows": 7192,
+ "bytes": 595541,
+ "columns": [
+  "base_month",
+  "station_id",
+  "station_name",
+  "station_address",
+  "emd",
+  "longitude",
+  "latitude",
+  "board_count",
+  "sample_date"
+ ],
+ "source": "openapi:613+612",
+ "api_params": {
+  "startDate": "YYYYMMDD",
+  "endDate": "YYYYMMDD",
+  "moveType": "승차",
+  "limit": 100,
+  "number": "페이지(1부터)"
+ },
+ "station_info_rows": 4352,
+ "station_matched_rows": 4932,
+ "emd_unmatched_rows": 2261,
+ "sample_dates": {
+  "2026-09": "20260901",
+  "2026-10": "20261001",
+  "2026-11": "20261101"
+ },
+ "api_calls": 195,
+ "collected_at": "2026-11-17T02:06:37",
+ "available": true,
+ "note": "제주데이터허브 Open API 스냅샷. 읍면동은 612 정류소 주소 문자열로 붙였고 실패 행은 emd가 비어 있다.",
+ "aggregation_note": "표본일 정류소별 moveType=승차의 priceType×payType 모든 행을 합산, 환승 제외. 주소가 붙은 읍면동만 접근성 비교에 사용."
+}

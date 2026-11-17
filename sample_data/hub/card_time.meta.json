@@ -1,0 +1,30 @@
+{
+ "id": "hub:502",
+ "hub_dataset_id": 502,
+ "requested_id": 817,
+ "requested_name": "시간대별 카드 이용금액 현황",
+ "name": "시간대별 카드 이용금액 현황",
+ "hub_title": "시간대별 카드 이용금액 현황",
+ "provider": "제주데이터허브",
+ "source_kind": "hub",
+ "period": "2024-07 ~ 2025-06",
+ "period_note": "최근 12개월만 저장",
+ "license": "제주데이터허브 공개 데이터(공공데이터법·시행령에 따라 이용, 출처 표시. 제출물 포함은 대회 게시판 #8·#20 답변으로 확인)",
+ "url": "https://jejudatahub.net/api/data/view?id=502",
+ "file": "card_time.csv",
+ "rows": 1144,
+ "bytes": 43513,
+ "columns": [
+  "base_year_month",
+  "time_type",
+  "user_type",
+  "age_range",
+  "use_amout_by_million"
+ ],
+ "source": "file:시간대별카드이용금액현황.csv",
+ "api_params": {},
+ "trimmed_rows": 7529,
+ "collected_at": "2026-11-17T01:14:19",
+ "available": true,
+ "note": "제주데이터허브 공개 데이터 스냅샷. 원본 갱신 주기를 따르지 않는 고정 사본."
+}
